@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
         body {
             display: flex;
@@ -8,30 +13,38 @@
             height: 100vh; /* Full height of the viewport */
             margin: 0; /* Remove default margin */
             background-color: #f0f0f0; /* Optional: background color */
+            font-family: Arial, sans-serif; /* Set a default font */
         }
 
         .button {
-            width: 100px;
-            height: 50px;
+            width: 120px;
+            height: 60px;
             border-radius: 10px;
-            background-color: #5f5f5f;
+            background: linear-gradient(135deg, #6a5acd, #00bfff); /* Gradient background */
             color: #fff;
             font-size: 20px;
             cursor: pointer;
             border: none;
             outline: none;
-            margin: 0 10px; /* Add margin between buttons */
+            margin: 0 15px; /* Add margin between buttons */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+
+        .button:hover {
+            transform: translateY(-3px); /* Lift effect on hover */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+        }
+
+        .button:active {
+            transform: translateY(1px); /* Press effect */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Reset shadow on press */
         }
     </style>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <button class="button" onclick="Surprise()">Surprise</button>
-        <button class="button" onclick="Skibidi()">Skibidi</button>
-        <script src="function.js"></script>
-    </body>
+</head>
+<body>
+    <button class="button" onclick="Surprise()">Surprise</button>
+    <button class="button" onclick="Skibidi()">Skibidi</button>
+    <script src="function.js"></script>
+</body>
 </html>
