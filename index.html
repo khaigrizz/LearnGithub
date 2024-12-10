@@ -8,12 +8,25 @@
     <style>
         body {
             display: flex;
+            flex-direction: column; /* Stack items vertically */
             justify-content: center;
             align-items: center;
             height: 100vh; /* Full height of the viewport */
             margin: 0; /* Remove default margin */
             background-color: #f0f0f0; /* Optional: background color */
             font-family: Arial, sans-serif; /* Set a default font */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Space between title and image */
+            color: #333; /* Title color */
+            font-size: 36px; /* Title font size */
+        }
+
+        img {
+            width: 150px; /* Set image width */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Space between image and buttons */
         }
 
         .button {
@@ -27,7 +40,7 @@
             border: none;
             outline: none;
             margin: 0 15px; /* Add margin between buttons */
-            transition: transform 1s, box-shadow 0.3s; /* Smooth transition for effects */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
         }
 
@@ -43,8 +56,12 @@
     </style>
 </head>
 <body>
-    <button class="button" onclick="Surprise()">Surprise</button>
-    <button class="button" onclick="Skibidi()">Skibidi</button>
+    <h1>Brainrot Page</h1> <!-- Title at the top of the page -->
+    <img src="chillguy.jpg" alt="Description of Image" /> <!-- Image above the buttons -->
+    <div>
+        <button class="button" onclick="Surprise()">Surprise</button>
+        <button class="button" onclick="Skibidi()">Skibidi</button>
+    </div>
     <script src="function.js"></script>
 </body>
 </html>
